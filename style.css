@@ -157,7 +157,7 @@ hr.height2em{
 	border:none;
 }
 hr.height1em{
-	height: 1em;
+	/*! height: 1em; */
 	border:none;
 }
 img,
@@ -257,7 +257,7 @@ img.userinfo-avatar{
 
 
 .mainbox{
-	background-color: #ddd;
+	background-color: #333;
 	/*background-image: url(./images/bg.jpg);*/
 	background-image: none;
 	background-position:center;
@@ -346,13 +346,14 @@ img.userinfo-avatar{
 .paper-header p{
 	margin: 6px 0;
 	padding: 0;
+	font-size: 15px;
 }
 .paper-footer{
 	margin: 1em 0 0;
 	padding: 10px 0;
 	background-color: #f7f7f7;
 	text-align: center;
-	font-size: 1.6em;
+	/*! font-size: 1.6em; */
 	font-weight: bold;
 }
 .paper-footer a{
@@ -365,6 +366,10 @@ img.userinfo-avatar{
 .post-title{
     padding:0 10px;
 	text-align: center;
+    /*!  */
+    /*!  */
+    margin: auto;
+    line-height: 35px;
 }
 
 .post-meta{
@@ -474,9 +479,9 @@ img.userinfo-avatar{
 @media screen and (min-width:1200px) {
 
 	.paperflow{
-		max-width: 1000px;
-		min-width: 800px;
-		width: 100%;
+		/*! max-width: 1000px; */
+		/*! min-width: 800px; */
+		/*! width: 100%; */
 		font-size: 16px;
 	}
 
@@ -485,11 +490,11 @@ img.userinfo-avatar{
 	}
 
 	h2.post-title{
-		font-size: 36px;
+		font-size: 30px;
 	}
 
 	.post-content{
-		font-size: 16px !important;
+		font-size: 13px !important;
 	}
 
 	.paper, .paper-addon, .paper-addin{

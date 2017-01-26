@@ -12,18 +12,21 @@
           <div class="btn-group dont-show-on-phone pull-right">
             <button class="btn btn-default pull-right" id="btnFavorite">
               <i class="fa fa-star"></i>
-            </button>{{if $.curIsPost}}
+            </button>
+            {{if $.curIsPost}}
             <button class="btn btn-default pull-right" id="btnPrint">
               <i class="fa fa-print"></i>
             </button>
             <button class="btn btn-default btn-dropdown">
               <i class="fa fa-ellipsis-h"></i>
-            </button>{{end}}
-          </div>{{if $.curIsPost}}
-
-          <button class="btn btn-default btn-dropdown pull-right">
+            </button>
+            {{end}}
+          </div>
+          {{if $.curIsPost}}
+          <button class="btn btn-default btn-dropdown pull-right" id="btnList">
             <i class="fa fa-list"></i>
-          </button>{{end}}
+          </button>
+          {{end}}
 
 <script type="text/javascript">
   function AddFavorite(title,url){
@@ -35,9 +38,11 @@
      }
    }
   }
+  
   function AddFavoriteThisPage(){
     AddFavorite(document.title,window.location.href);
   }
+  
   $("#btnToggleNavphone").click(function(){
     $("#sidebar").slideToggle();
   });
@@ -46,6 +51,9 @@
   });
   $("#btnPrint").click(function(){window.print()});
   $("#btnFavorite").click(function(){AddFavoriteThisPage()});
+  $("#btnList").click(function() {
+      alert("抱歉！暂未支持导航栏功能！");
+  })
 </script>
 
         </div>

@@ -24,7 +24,8 @@ function scrollTo(self, tagName, text) {
 		}
 		var nowTop = $(document).scrollTop();
 		// 用$("body").scrllTop(10)没反应 firefox下
-		$('html,body').animate({scrollTop: top}, 200);
+		//$('html,body').animate({scrollTop: top}, 200);
+		$('html').animate({scrollTop: top}, 200);
 		return;
 	}
 }
@@ -36,11 +37,16 @@ function genNav() {
 	var tree = [];//[{title: "xx", children:[{}]}, {title:"xx2"}];
 	var hs = $con.find("h1,h2,h3,h4,h5,h6").toArray();
 	var titles = '<ul>';
+  
 	for(var i = 0; i < hs.length; ++i) {
 		var text = $(hs[i]).text(); 
 		var tagName = hs[i].tagName.toLowerCase();
 		// scrollTo在page.js中定义
-		titles += '<li class="nav-' + tagName + '"><a data-a="' + tagName + '-' + encodeURI(text)+'" onclick="scrollTo(this, \'' + tagName + '\', \'' + text + '\')">' + text + '</a></li>';
+	//	titles += '<li class="nav-' + tagName + '"><a data-a="' + tagName + '-' + encodeURI(text)+'" onclick="scrollTo(this, \'' + tagName + '\', \'' + text + '\')">' + text + '</a></li>';
+	//    titles += '<li class="nav-' + tagName + '"><a class="nav-link" href="#' + text + '">' + text + '</a></li>';
+	    var index = i + 1;
+		var anchor = 'title-' + index; 
+	    titles += '<li class="nav-' + tagName + '"><a class="nav-link" href="#' + anchor + '">' + text + '</a></li>';
 	}
 	titles += "</ul>";
 	$("#postNavContent").html(titles);

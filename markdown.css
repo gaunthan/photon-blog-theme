@@ -9,12 +9,15 @@
     color: #555;
     line-height: 1.6;
     font-size:14px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 @media screen and (min-width:1200px){
     .post-content {
         line-height: 1.8;
         font-size:16px;
+        padding-left: 25px;
     }
 }
 
@@ -98,7 +101,7 @@
     .post-content > p,
     .post-content > pre,
     .post-content > div {
-        padding: 0 60px;
+        /*! padding: 0 60px; */
     }
     .post-content ul,
     .post-content ol {
@@ -117,7 +120,7 @@
         padding: 0 60px 0 40px;
     }
     .post-content > h3 {
-        padding: 0 60px 0 70px;
+        padding: 0 60px 0 40px;
     }
     .post-content > h4,
     .post-content > h5,
@@ -194,7 +197,9 @@
 }
 
 .post-content > *:first-child {
-    margin-top: 0 !important;
+    /*! margin-top: 0 !important; */
+    /*!  */
+    /*!  */
 }
 .post-content > *:last-child {
     margin-bottom: 0 !important;
@@ -216,11 +221,13 @@
 .post-content h5,
 .post-content h6 {
     position: relative;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    /*! margin-top: 2rem; */
+    /*! margin-bottom: 1rem; */
     font-weight: bold;
     line-height: 1.4;
     cursor: text;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 .post-content h1:hover a.anchor,
 .post-content h2:hover a.anchor,
@@ -262,10 +269,13 @@
     border-bottom: 1px solid #eee;
 }
 .post-content h2 {
-    padding-bottom: .3em;
+    padding-bottom: .2em;
     font-size: 1.7em;
     line-height: 1.2;
     border-bottom: 1px solid #eee;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 50px;
 }
 .post-content h3 {
     font-size: 1.4em;
@@ -298,12 +308,24 @@
 .post-content dl{
     margin: 0.8em 0;
     max-width: 100%;
-    /*overflow: auto;*/
+    /*! overflow: auto; */
+    font-size: 13.5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    line-height: 22px;
 }
+
+.post-content ul,
+.post-content ol{
+    padding-left: 30px;
+    /*!  */       
+}
+
 .post-content li>ol,
 .post-content li>ul {
     margin: 0 0;
 }
+
 .post-content hr {
     height: 1px;
     padding: 0;
@@ -426,7 +448,7 @@
 .post-content kbd,
 .post-content .kbd,
 .post-content tt {
-    background-color: #f8f8f8;
+    background-color: #f7f7f7;
     border-radius: 3px;
     font-family: Consolas, "Liberation Mono", Courier, monospace;
     padding: 2px 4px 0px 4px;

@@ -25,24 +25,21 @@
     "Version": "20161011",
     "Author": "roomcar",
     "AuthorUrl": "http://roomcar.leanote.com/post/leanote-theme-photon",
-    "DontPrintComment": "好呀好呀~",
-    "CanGiveMoneyDefult":"要的要的",
-    "CanGiveMoney":"",
-    "MoneyNotice": "通过上方按钮请我喝茶 (='ω'=)",
-    "CopyrightAnnouncementDefult": "博主注意：请在theme.json中修改版权声明，如“某某某原创文章，转载请注明出处”。另外，下方的打赏二维码请更换为自己的！否则赏钱打给roomcar了他可不会还给你啊！",
+    "DontPrintComment": "Yes",
+    "CanGiveMoneyDefult":"Yes",
+    "CanGiveMoney": "Yes",
+    "MoneyNotice": "通过上方按钮拍我猫粮 (='ω'=)",
+    "CopyrightAnnouncementDefult": "原创文章 by gaunthan",
     "CopyrightAnnouncement": "原创文章，欢迎注明出处转载。",
     "FriendLinks": [
-        {"Title": "roomcar 主题作者", "Url": "http://roomcar.leanote.com", "faicon": "user"},
-        {"Title": "TriDict", "Url": "http://tridict.leanote.com", "faicon": "bookmark"},
+        {"Title": "My Github", "Url": "http://github.com/gaunthan", "faicon": "github-alt"},
+        {"Title": "roomcar", "Url": "http://roomcar.leanote.com", "faicon": "user"},
         {"Title": "leanote", "Url": "http://leanote.com", "faicon": "star"},
         {"Title": "lea++", "Url": "http://lea.leanote.com", "faicon": "star"},
         {"Title": "leanote BBS", "Url": "http://bbs.leanote.com", "faicon": "star"}
     ],
     "PersonalLinks": [
-        {"Title": "github", "Url": "http://github.com", "faicon": "github-alt"},
-        {"Title": "weibo", "Url": "http://weibo.com", "faicon": "weibo"},
-        {"Title": "teitter", "Url": "http://teitter.com", "faicon": "teitter"},
-        {"Title": "weixin", "Url": "http://weixin.com", "faicon": "weixin"},
-        {"Title": "leanote", "Url": "http://leanote.com", "faicon": "star"}
+        {"Title": "Github", "Url": "http://github.com/gaunthan", "faicon": "github-alt"},
+        {"Title": "Leanote", "Url": "http://leanote.com", "faicon": "star"}
     ]
 }
