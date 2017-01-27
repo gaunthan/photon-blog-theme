@@ -2,6 +2,7 @@
 > A Leanote blog theme using photon.
 
 Forked from gitforziio/photon-blog-theme, modifyed to fit my need.
+[DEMO](http://gaunthan.leanote.com)
 
 ## 说明V2
 ### 本版本进度
