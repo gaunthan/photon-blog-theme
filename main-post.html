@@ -182,7 +182,8 @@
 
 <!-- 是markdown -->
 {{if $.post.IsMarkdown }}
-<script src="http://leanote.com/public/libs/md2html/md2html.js"></script>
+<!--<script src="http://leanote.com/public/libs/md2html/md2html.js"></script>-->
+<script src="{{$.themeBaseUrl}}/mymd2html.js"></script>
 <script>
 var content = $.trim($("#markdownContent textarea").val());
 md2Html(content, $("#content"), function(html) {

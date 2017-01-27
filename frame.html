@@ -9,10 +9,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta name="format-detection" content="telephone=no, email=no"/>
 <meta name="description" content="~"/>
-<meta name="keywords" content="前端,博客,前端博客,html,css,javascript,python,django,眼动仪,psychtoolbox,matlab,室车,roomcar,自动言语机"/>
+<meta name="keywords" content="Developer of Enbedded Development, C/C++, Linux, Backbone"/>
 <link rel="shortcuticon" type="image/png" href="{{$.blogInfo.Logo}}"/>
 <link rel="icon" type="image/png" href="{{$.blogInfo.Logo}}"/>
-<title>{{if $.curIsIndex}}{{$.blogInfo.Title}}{{else if $.curIsCate}}{{$.curCateTitle}} | {{$.blogInfo.Title}}{{else if $.curIsSearch}}搜索-{{$.keywords}} | {{$.blogInfo.Title}}{{else if $.curIsTags}}标签 | {{$.blogInfo.Title}}{{else if $.curIsTagPosts}}标签-{{$.curTag}} | {{$.blogInfo.Title}}{{else if $.curIsPost}}{{if $.post.Title}}{{$.post.Title}}{{else}}无题{{end}} | {{$.blogInfo.Title}}{{else if $.curIsSingle}}{{$.single.Title}} | {{$.blogInfo.Title}}{{else if $.curIsArchive}}归档 | {{$.blogInfo.Title}}{{else}}{{$.blogInfo.Title}}{{end}}</title>
+<title>{{if $.curIsIndex}}{{$.blogInfo.Title}}{{else if $.curIsCate}}{{$.curCateTitle}} | {{$.blogInfo.Title}}{{else if $.curIsSearch}}Searching {{$.keywords}} | {{$.blogInfo.Title}}{{else if $.curIsTags}}Tags | {{$.blogInfo.Title}}{{else if $.curIsTagPosts}}Tags {{$.curTag}} | {{$.blogInfo.Title}}{{else if $.curIsPost}}{{if $.post.Title}}{{$.post.Title}}{{else}}Untitled{{end}} | {{$.blogInfo.Title}}{{else if $.curIsSingle}}{{$.single.Title}} | {{$.blogInfo.Title}}{{else if $.curIsArchive}}Archives | {{$.blogInfo.Title}}{{else}}{{$.blogInfo.Title}}{{end}}</title>
 <!--<link href="{{$.bootstrapCssUrl}}" rel="stylesheet">-->
 <link href="{{$.themeBaseUrl}}/photon.css" rel="stylesheet">
 <link href="{{$.themeBaseUrl}}/style.css" rel="stylesheet">
@@ -29,9 +29,6 @@
 <![endif]-->
 </head>
 
-
-
-
   <body>
 
 {{template "script-import.html" $}}
@@ -46,8 +43,7 @@
 {{template "block-sidebar.html" $}}
 
           <div class="pane mainbox">
-
-
+       
 {{if (or (or (or $.curIsIndex $.curIsCate) $.curIsSearch) $.curIsTagPosts)}}
 
 {{template "main-list.html" $}}
@@ -92,8 +88,12 @@ setTimeout(function(){
 	}
 },200);
 </script>
+            </div>
+                <div class="pane pane-sm sidebar print-dont" id="postNavContent" style="display: none;">
+                </div>
+          
+        </div>          
 
-          </div>
         </div>
       </div>
 

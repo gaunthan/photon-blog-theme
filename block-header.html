@@ -9,7 +9,7 @@
             <i class="fa fa-navicon"></i>
           </button>
 
-          <div class="btn-group dont-show-on-phone pull-right">
+          <div class="btn-group pull-right">
             <button class="btn btn-default pull-right" id="btnFavorite">
               <i class="fa fa-star"></i>
             </button>
@@ -23,8 +23,7 @@
             {{end}}
           </div>
           {{if $.curIsPost}}
-          <button class="btn btn-default btn-dropdown pull-right" id="btnList">
-            <i class="fa fa-list"></i>
+          <button class="fa fa-list btn btn-default btn-dropdown pull-right" id="postNavNav">
           </button>
           {{end}}
 
@@ -51,11 +50,10 @@
   });
   $("#btnPrint").click(function(){window.print()});
   $("#btnFavorite").click(function(){AddFavoriteThisPage()});
-  $("#btnList").click(function() {
-      alert("抱歉！暂未支持导航栏功能！");
-  })
+//   $("#btnList").click(function() {
+//       alert("抱歉！暂未支持导航栏功能！");
+//   })
 </script>
-
         </div>
 
       </header>

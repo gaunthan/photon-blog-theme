@@ -17,43 +17,60 @@
             </div>
 
             <nav class="nav-group">
-              <h5 class="nav-group-title">页面</h5>
+              <h5 class="nav-group-title">Pages</h5>
+              
               <a class="nav-group-item" href="{{.indexUrl}}">
                 <i class="fa fa-home"></i>
-                主页
+                Home
               </a>
+              
+              {{if $.cates}}
               <h5 class="nav-group-title"></h5>{{range $.cates}}
               <a class="nav-group-item{{if eq .CateId $.curCateId}} active{{end}}" href="{{$.cateUrl}}/{{.UrlTitle}}">
                 <i class="fa fa-inbox"></i>
                 {{.Title}}
               </a>{{end}}
-              <h5 class="nav-group-title"></h5>{{range $.singles}}
+              {{end}}
+              
+              {{if $.singles}}
+              <!--<h5 class="nav-group-title"></h5>-->
+              {{range $.singles}}
               <a class="nav-group-item{{if eq $.curSingleId .SingleId}} active{{end}}" href="{{$.singleUrl}}/{{.UrlTitle}}">
                 <i class="fa fa-bookmark"></i>
                 {{.Title}}
               </a>{{end}}
+              {{end}}
             </nav>
-
+              
+              
             <nav class="nav-group">
-              <h5 class="nav-group-title">检索</h5>
+              <h5 class="nav-group-title">Retrieve Items</h5>
               <a class="nav-group-item{{if $.curIsArchive}} active{{end}}" href="{{.archiveUrl}}">
                 <i class="fa fa-archive"></i>
-                归档
+                Archives
               </a>
               <a class="nav-group-item{{if $.curIsTags}} active{{end}}" href="{{.tagsUrl}}">
                 <i class="fa fa-tags"></i>
-                标签
+                Tags
               </a>
               <span class="nav-group-item">
                 <form class="search-form" id="search" onsubmit="search(event);return false;">
                 <i class="fa fa-search" onclick="search(event);"></i>
-                <input class="searchInput" type="text" name="searchInput" id="searchInput" placeholder="搜索" onsubmit="search()">
+                <input class="searchInput" type="text" name="searchInput" id="searchInput" placeholder="Enter to search" onsubmit="search()">
                 </form>
               </span>
             </nav>
 
             <nav class="nav-group">
-              <h5 class="nav-group-title">友情链接</h5>{{range $.themeInfo.FriendLinks}}
+              <h5 class="nav-group-title">Personal Links</h5>{{range $.themeInfo.PersonalLinks}}
+              <a class="nav-group-item" href="{{.Url}}" target="_blank">
+                <i class="fa fa-{{.faicon}}"></i>
+                {{.Title}}
+              </a>{{end}}
+            </nav>
+            
+            <nav class="nav-group">
+              <h5 class="nav-group-title">Friend Links</h5>{{range $.themeInfo.FriendLinks}}
               <a class="nav-group-item" href="{{.Url}}" target="_blank">
                 <i class="fa fa-{{.faicon}}"></i>
                 {{.Title}}
@@ -61,15 +78,12 @@
             </nav>
 
             <nav class="nav-group">
-              <h5 class="nav-group-title">站长工具</h5>
-              <a class="nav-group-item" href="https://leanote.com/note" target="_blank">
-                <i class="fa fa-book"></i>
-                我的笔记
-              </a>
-              <a class="nav-group-item" href="https://leanote.com/member/blog/theme" target="_blank">
-                <i class="fa fa-tachometer"></i>
-                博客设置
-              </a>
+              <h5 class="nav-group-title">Tools</h5>{{range $.themeInfo.Tools}}
+              <a class="nav-group-item" href="{{.Url}}" target="_blank">
+                <i class="fa fa-{{.faicon}}"></i>
+                {{.Title}}
+              </a>{{end}}
             </nav>
+
             <hr class="height2em"/>
           </div>

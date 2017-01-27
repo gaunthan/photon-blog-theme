@@ -2332,3 +2332,52 @@ td:last-child {
   flex: none;
   padding: 3px 10px;
 }
+
+
+.nav-h1 {
+	padding-left: 0px;
+}
+
+.nav-h2 {
+	padding-left: .5EM;
+}
+.nav-h3 {
+	padding-left: 1.5EM;
+}
+
+.nav-h4 {
+	padding-left: 2.5em;
+}
+
+.nav-h5 {
+	padding-left: 3.5em;
+}
+
+.nav-h6 {
+	padding-left: 4.5em;
+}
+
+.nav-h2:before {
+	content: '·';
+	padding-right: 5px;
+}
+
+.nav-h3:before {
+	content: '·';
+	padding-right: 5px;
+}
+
+.nav-h4:before {
+	content: '·';
+	padding-right: 5px;
+}
+
+.nav-h5:before {
+	content: '·';
+	padding-right: 5px;
+}
+
+.nav-h6:before {
+	content: '·';
+	padding-right: 5px;
+}

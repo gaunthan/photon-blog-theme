@@ -29,6 +29,9 @@ function scrollTo(self, tagName, text) {
 		return;
 	}
 }
+
+var titles = '<ul style="list-style: none;padding-left: 5px;">';
+
 function genNav() {
 	var $con = $("#content");
 	var html = $con.html();
@@ -36,8 +39,7 @@ function genNav() {
 	// {"h1-title":{h2-title:{}}}
 	var tree = [];//[{title: "xx", children:[{}]}, {title:"xx2"}];
 	var hs = $con.find("h1,h2,h3,h4,h5,h6").toArray();
-	var titles = '<ul>';
-  
+
 	for(var i = 0; i < hs.length; ++i) {
 		var text = $(hs[i]).text(); 
 		var tagName = hs[i].tagName.toLowerCase();
@@ -49,7 +51,7 @@ function genNav() {
 	    titles += '<li class="nav-' + tagName + '"><a class="nav-link" href="#' + anchor + '">' + text + '</a></li>';
 	}
 	titles += "</ul>";
-	$("#postNavContent").html(titles);
+
 	if(!hs.length) {
 		$("#postNavContent").html("无");
 		return false;
@@ -62,7 +64,7 @@ function initNav() {
 	if(!hasNav) {
 		return;
 	}
-
+	
 //------------------就是这里！！坑爹的blog导航定位！！！
 /*
 	
@@ -84,6 +86,8 @@ function initNav() {
 */	
 	$("#postNavNav").click(function() {
 		var $o = $("#postNavContent");
+		$o.html(titles);
+
 		if($o.is(":hidden")) {
 			$o.show();
 		} else {

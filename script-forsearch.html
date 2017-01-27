@@ -5,10 +5,12 @@ function search(e) {
 	if(!keywords) {
 		location.href = "{{$.searchUrl}}";
 	} else {
-		var tpl = '<form action="{{$.searchUrl}}" method="get">';
-		tpl += '<input name="keywords" value="' + keywords + '" />';
-		tpl += "</form";
-		$(tpl).submit();
+// 		var tpl = '<form action="{{$.searchUrl}}" method="get">';
+// 		tpl += '<input name="keywords" value="' + keywords + '"/>';
+// 		tpl += "</form>";
+// 		$(tpl).submit();
+// 		console.log(tpl);
+		location.href = "{{$.searchUrl}}" + "?keywords=" + keywords;
 	}
 }
 </script>

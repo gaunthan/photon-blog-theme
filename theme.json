@@ -32,7 +32,6 @@
     "CopyrightAnnouncementDefult": "原创文章 by gaunthan",
     "CopyrightAnnouncement": "原创文章，欢迎注明出处转载。",
     "FriendLinks": [
-        {"Title": "My Github", "Url": "http://github.com/gaunthan", "faicon": "github-alt"},
         {"Title": "roomcar", "Url": "http://roomcar.leanote.com", "faicon": "user"},
         {"Title": "leanote", "Url": "http://leanote.com", "faicon": "star"},
         {"Title": "lea++", "Url": "http://lea.leanote.com", "faicon": "star"},
@@ -40,6 +39,11 @@
     ],
     "PersonalLinks": [
         {"Title": "Github", "Url": "http://github.com/gaunthan", "faicon": "github-alt"},
-        {"Title": "Leanote", "Url": "http://leanote.com", "faicon": "star"}
+        {"Title": "Mail", "Url": "mailto:gaunthanhuang@foxmail.com", "faicon": "fa fa-envelope"}
+    ],
+    "Tools": [
+        {"Title": "Online Note", "Url": "http://leanote.com/note", "faicon": "fa fa-book"},
+        {"Title": "Blog Settings", "Url": "https://leanote.com/member/blog/theme", "faicon": "fa fa-cog"}
     ]
+    
 }
