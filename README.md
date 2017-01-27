@@ -1,5 +1,6 @@
 # photon-blog-theme
 > A Leanote blog theme using photon.
+
 Forked from gitforziio/photon-blog-theme, modifyed to fit my need.
 
 ## 说明V2
