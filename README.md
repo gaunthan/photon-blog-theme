@@ -10,15 +10,14 @@ Forked from gitforziio/photon-blog-theme, modifyed to fit my need.
 - 优化了页面左侧边栏：添加了个人链接栏、使用模板生成item。
 
 ### 最新截图
-#### 左边栏
-![](./screenshot-left-sidebar.png)
+#### 导航
+![](./images/screenshot-nav.png)
 
 #### 搜索
-![](./screenshot-searching.png)
+![](./images/screenshot-searching.png)
 
-#### 导航
-![](./screenshot-nav.png)
-
+#### 左边栏
+![](./images/screenshot-left-sidebar.png)
 
 ## 说明V1
 按照个人爱好进行了修改，包括：
@@ -35,7 +34,7 @@ Forked from gitforziio/photon-blog-theme, modifyed to fit my need.
 
 ## 截图
 ### 原效果
-1[](./images/screenshot.png)
+![](./images/screenshot.png)
 
 ### 修改后效果
 #### 主页
