@@ -7,22 +7,21 @@
     <div class="post-containter" id="post">
 
         <div class="post-meta">
-            <h1 class="post-title"><a href="{{$.tagsUrl}}" title="标签">标签</a></h1>
+            <h1 class="post-title"><a href="{{$.tagsUrl}}" title="标签">Tags</a></h1>
             <div class="post-print print-only">
-                <p class="post-author">作者：{{$.blogInfo.Username}}</p>
+                <p class="post-author">Author：{{$.blogInfo.Username}}</p>
                 <p>{{$.blogInfo.Title}}  {{$.indexUrl}}</p>
             </div>
         </div>
 
         <div class="post-content" id="content">
             <ul>{{range $.tags}}
-            <li><a href="{{$.tagPostsUrl}}/{{.Tag}}">{{.Tag}} {{.Count}}</a></li>
-            {{end}}</ul>
+            <li><a href="{{$.tagPostsUrl}}/{{.Tag}}">{{.Tag}}  ({{.Count}})</a></li>
+            {{end}}
+            </ul>
         </div>
-
     </div>
 </div>
-
 
 {{else if $.curIsSingle}}
 <div class="paper">
