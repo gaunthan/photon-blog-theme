@@ -28,7 +28,7 @@
     "DontPrintComment": "Yes",
     "CanGiveMoneyDefult":"Yes",
     "CanGiveMoney": "Yes",
-    "MoneyNotice": "通过上方按钮拍我猫粮 (='ω'=)",
+    "MoneyNotice": "要请我喝茶吗 (='ω'=)",
     "CopyrightAnnouncementDefult": "原创文章 by gaunthan",
     "CopyrightAnnouncement": "原创文章，欢迎注明出处转载。",
     "FriendLinks": [
@@ -39,7 +39,9 @@
     ],
     "PersonalLinks": [
         {"Title": "Github", "Url": "http://github.com/gaunthan", "faicon": "github-alt"},
-        {"Title": "Mail", "Url": "mailto:gaunthanhuang@foxmail.com", "faicon": "fa fa-envelope"}
+        {"Title": "Mail", "Url": "mailto:gaunthanhuang@foxmail.com", "faicon": "fa fa-envelope"},
+        {"Title": "Zhihu", "Url": "https://www.zhihu.com/people/gaunthan", "faicon": "fa fa-comments-o"},
+        {"Title": "Cloud Music", "Url": "http://music.163.com/#/user/home?id=87822300", "faicon": "fa fa-music"}
     ],
     "Tools": [
         {"Title": "Online Note", "Url": "http://leanote.com/note", "faicon": "fa fa-book"},
