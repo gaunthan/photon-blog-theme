@@ -444,7 +444,6 @@
 }
 
 .post-content .md-fences,
-.post-content code,
 .post-content kbd,
 .post-content .kbd,
 .post-content tt {
@@ -455,10 +454,23 @@
     font-size: 0.9em;
 }
 
-.post-content pre code {
-    border: none;
-    background-color: transparent;
-    padding: 0;
+pre,
+code {
+  font-family: consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace;
+}
+code {
+  padding: 2px 4px;
+  word-wrap: break-word;
+  color: #ccc;
+  background: #2d2d2d;
+  border-radius: 3px;
+  font-size: 13px;
+}
+pre code {
+  padding: 0;
+  color: #ccc;
+  background: none;
+  text-shadow: none;
 }
 
 .post-content .md-fences {
