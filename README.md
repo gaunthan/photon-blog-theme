@@ -4,6 +4,9 @@
 Forked from gitforziio/photon-blog-theme, modifyed to fit my need.
 [DEMO](http://gaunthan.leanote.com)
 
+## 说明V3
+规范了脚注的显示，美化了导航栏修饰符，将控件的显示内容替换为英文。
+
 ## 说明V2
 ### 本版本进度
 - 修复了搜索问题。
@@ -26,7 +29,7 @@ Forked from gitforziio/photon-blog-theme, modifyed to fit my need.
 - 个人信息：个人链接、二维码等。
 - 外观：代码渲染效果、段落对齐、字体等。
 
-## 拟完善功能
+## 说明V0
 由于原作者roomcar大大弃坑，部分功能暂未完成：文章导航、Firefox下的搜索功能等。
 待完善下列功能：
 
@@ -45,4 +48,5 @@ Forked from gitforziio/photon-blog-theme, modifyed to fit my need.
 ![](./images/screenshot-paper.png)
 
 #### 代码效果
+代码主题是Solarized-dark：
 ![](./images/screenshot-code.png)
