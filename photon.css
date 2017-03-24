@@ -2358,26 +2358,26 @@ td:last-child {
 }
 
 .nav-h2:before {
-	content: '·';
+	content: '•';
 	padding-right: 5px;
 }
 
 .nav-h3:before {
-	content: '·';
+	content: '•';
 	padding-right: 5px;
 }
 
 .nav-h4:before {
-	content: '·';
+	content: '•';
 	padding-right: 5px;
 }
 
 .nav-h5:before {
-	content: '·';
+	content: '•';
 	padding-right: 5px;
 }
 
 .nav-h6:before {
-	content: '·';
+	content: '•';
 	padding-right: 5px;
 }
