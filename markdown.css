@@ -462,9 +462,11 @@ code {
   padding: 2px 4px;
   word-wrap: break-word;
   color: #ccc;
-  background: #2d2d2d;
+  background: #656c7a;
   border-radius: 3px;
   font-size: 13px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 pre code {
   padding: 0;
