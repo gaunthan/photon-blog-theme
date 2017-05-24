@@ -121,6 +121,7 @@ table {
 td,
 th {
   padding: 0;
+  min-width: 8em;
 }
 
 * {
@@ -2253,7 +2254,7 @@ th {
 th,
 td {
   padding: 2px 15px;
-  white-space: nowrap;
+  white-space: normal;
   overflow: hidden;
   text-overflow: ellipsis;
 }
