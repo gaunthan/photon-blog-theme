@@ -4,49 +4,38 @@
 Forked from gitforziio/photon-blog-theme, modifyed to fit my need.
 [DEMO](http://gaunthan.leanote.com)
 
-## 说明V3
-规范了脚注的显示，美化了导航栏修饰符，将控件的显示内容替换为英文。
+## Improves
 
-## 说明V2
-### 本版本进度
-- 修复了搜索问题。
-- 在页面右侧添加了导航栏，并与工具栏下拉按钮关联。同时支持了文章导航功能。
-- 优化了页面左侧边栏：添加了个人链接栏、使用模板生成item。
+- 细微调整主题样式，修改段落和字体大小，使其可读性更高
+- 设置代码高亮主题为Solarized-dark
+- 修复了搜索问题
+- 在页面右侧添加了导航栏，并与工具栏下拉按钮关联，支持文章导航
+- 优化了页面左侧边栏：添加了个人链接栏
+- 使用模板和js生成左边栏item，可直接修改 theme.json 文件添加新的item
+- 规范了脚注的显示，将其作为右上标显示
+- 美化了导航栏，修改修饰符以及将显示内容替换为英文
 
-### 最新截图
-#### 导航
-![](./images/screenshot-nav.png)
-
-#### 搜索
-![](./images/screenshot-searching.png)
-
-#### 左边栏
-![](./images/screenshot-left-sidebar.png)
-
-## 说明V1
-按照个人爱好进行了修改，包括：
-
-- 个人信息：个人链接、二维码等。
-- 外观：代码渲染效果、段落对齐、字体等。
-
-## 说明V0
-由于原作者roomcar大大弃坑，部分功能暂未完成：文章导航、Firefox下的搜索功能等。
-待完善下列功能：
-
-- 文章导航功能
-- 搜索服务兼容完善
-
-## 截图
-### 原效果
-![](./images/screenshot.png)
-
-### 修改后效果
-#### 主页
+## Screenshots
+### Homepage
 ![](./images/screenshot-homepage.png)
 
-#### 文章
+### Navigatiton Bar
+![](./images/screenshot-nav.png)
+
+### Left Side Bar
+![](./images/screenshot-left-sidebar.png)
+
+### Article
 ![](./images/screenshot-paper.png)
 
-#### 代码效果
-代码主题是Solarized-dark：
+### Code
 ![](./images/screenshot-code.png)
+ 
+![](./images/screenshot-code-2.png)
+
+### Searching
+![](./images/screenshot-searching.png)
+
+### Mobile Port
+![](./images/screenshot.png)
+
